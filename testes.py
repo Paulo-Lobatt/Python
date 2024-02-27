@@ -1,6 +1,7 @@
-import calendar
-import locale
+import requests
 
-locale.setlocale(locale.LC_ALL, '')
+url = 'http://localhost:3333/'
 
-print(calendar.calendar(2024))
+response = requests.get(url)
+
+print(response)
